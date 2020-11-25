@@ -12,7 +12,7 @@
 
     <section class="main-section">
         <nav id="navbar">
-            </header>JS Documentation<header>
+            <header>JS Documentation</header>
                 <ul>
                     <li>
                         <a class="nav-link" href="#Introduction">Introduction</a>
@@ -60,7 +60,7 @@
         </nav>
     </section>
 
-    <main>
+    <main id="main-doc">
         <section id="Introduction" class="main-section">
             <header>Introduction</header>
             <article>
@@ -106,6 +106,7 @@
         </section>
         <section id="JavaScript_and_Java" class="main-section">
             <header>JavaScript and Java</header>
+            <article>
             <p>
                 JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript
                 language resembles Java but does not have Java's static typing and strong type checking. JavaScript
@@ -126,13 +127,15 @@
                 protected, and you do not have to implement interfaces. Variables, parameters, and function return types
                 are not explicitly typed.
             </p>
+        </article>
         </section>
         <section id="Hello_world" class="main-section">
             <header>Hello world</header>
+            <article>
             o get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
             code:
             <code>
-                function greetMe(yourName) { alert("Hello " + yourName); }
+                function greetMe(yourName) { alert("Hello " + yourName); } <br>
                 greetMe("World");
             </code>
             Select the code in the pad and hit Ctrl+R to watch it unfold in your
@@ -154,9 +157,11 @@
                 escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and
                 _name.
             </p>
+        </article>
         </section>
         <section id="Declaring_variables" class="main-section">
             <header>Declaring Variables</header>
+            <article>
             <p>
                 With the keyword var. For example,
                 <code>
@@ -177,9 +182,11 @@
                 </code>
                 This syntax can be used to declare a block scope local variable. See Variable scope below.
             </p>
+        </article>
         </section>
         <section id="Variable_scope" class="main-section">
             <header>Variable Scope</header>
+            <article>
             <p>
 
                 When you declare a variable outside of any function, it is called a
@@ -209,12 +216,14 @@
 
             </p>
             <code>
-                if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+                if (true) { let y = 5; } console.log(y); // ReferenceError: y is not <br>
                 defined
             </code>
+        </article>
         </section>
         <section id="Global_variables" class="main-section">
             <header>Global Variables</header>
+            <article>
             <p>
 
                 Global variables are in fact properties of the global object. In web
@@ -231,8 +240,10 @@
                 parent.phoneNumber.
 
             </p>
+        </article>
         </section>
         <section id="Constants" class="main-section">
+            <article>
             <header>Constants</header>
             <article>
                 <p>
@@ -243,6 +254,11 @@
                     can contain alphabetic, numeric, or underscore characters.
 
                 </p>
+                <code>
+                    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL <br>
+        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+      <br>  }
+                </code>
                 <code>
                     const PI = 3.14;
                 </code>
@@ -279,16 +295,17 @@
                 <p>The latest ECMAScript standard defines seven data types:</p>
                 <ul>
                     <li>
+                        <p>Six data types that are primitives:</p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Boolean. true and false.</li>
+                            <li> null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant. </li>
+                            <li>undefined. A top-level property whose value is undefined.</li>
+                            <li>Number. 42 or 3.14159.</li>
+                            <li>String. "Howdy"</li>
+                            <li> Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable. </li>
                         </ul>
                     </li>
-                    <li></li>
+                    <li>and Object</li>
                 </ul>
                 Although these data types are a relatively small amount, they enable you to perform useful functions
                 with your applications. Objects and functions are the other fundamental elements in the language. You
@@ -321,7 +338,7 @@
             </p>
             <code>
                 if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-                } else if (condition_n) { statement_n; } else { statement_last; }
+             <br>   } else if (condition_n) { statement_n; } else { statement_last; }
 
             </code>
 
@@ -332,9 +349,9 @@
 
             <code>
                 if (condition) { statement_1_runs_if_condition_is_true;
-                statement_2_runs_if_condition_is_true; } else {
-                statement_3_runs_if_condition_is_false;
-                statement_4_runs_if_condition_is_false; }
+              <br>  statement_2_runs_if_condition_is_true; } else {
+               <br> statement_3_runs_if_condition_is_false;
+               <br> statement_4_runs_if_condition_is_false; }
             </code>
 
             It is advisable to not use simple assignments in a conditional expression,
